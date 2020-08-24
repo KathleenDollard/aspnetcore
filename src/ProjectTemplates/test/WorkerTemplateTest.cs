@@ -23,8 +23,8 @@ namespace Templates.Test
 
         [ConditionalTheory]
         [OSSkipCondition(OperatingSystems.Linux, SkipReason = "https://github.com/dotnet/sdk/issues/12831")]
-        [TheoryData("C#")]
-        [TheoryData("F#")]
+        [InlineData("C#")]
+        [InlineData("F#")]
         [Repeat]
         public async Task WorkerTemplateAsync(string language)
         {
