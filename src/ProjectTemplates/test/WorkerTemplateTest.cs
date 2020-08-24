@@ -28,7 +28,6 @@ namespace Templates.Test
         [Repeat]
         public async Task WorkerTemplateAsync(string language)
         {
-            var projectName = "worker"
             Project = await ProjectFactory.GetOrCreateProject(
                 $"worker-{ language.ToLowerInvariant()[0] }sharp",
                 Output);
